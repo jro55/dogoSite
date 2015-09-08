@@ -1,14 +1,15 @@
 .container {
 	width: 100vw;
-	background-color: #E6E6E6;
+	background-image: url("/Users/student/Downloads/witewall_3/witewall_3.png");
 	height: 100vw;
 }
 
 .navbar {
 	width: 200px;
 	height: 100vw;
-	background-color: #F2F2F2;
+	background-image: url("/Users/student/Downloads/witewall_3/witewall_3.png");
 	position: fixed;
+	border-right: 1px solid #D8D8D8;
 }
 
 .logo img {
@@ -23,7 +24,6 @@
 }
 
 .links li {
-	padding: 9px;
 	background-color: ;
 	border-bottom: 1px solid #D8D8D8;
 	display: block;
@@ -40,14 +40,76 @@
 	color: white;
 }
 
+/*Need to fix the padding to correct clickable area*/
 .linkText {
 	text-decoration: none;
 	color: #FF0000;
-	font-family: Palatino Linotype;
+	font-family: optima;
+	display: inline-block;
+	padding: 10px 30px 10px 10px;
 }
 
 .header {
 	display: inline-block;
 	float: left;
 	margin-left: 220px;
+	font-family: optima;
+	color: #FF0000;
+	margin-top: 65px;
 }
+
+.quote {
+	display: inline-block;
+	top: 105px;
+	position: absolute;
+	left: 240px;
+	font-family: optima;
+}
+
+.rotatingImgBox {
+	margin-left: 200px;
+	padding-top: 197px;
+}
+
+.rotatingImg {
+	margin: 40px 20px 20px 15px;
+	right: 80px;
+	display: inline;
+	max-width: 76vw;
+	min-width: 700px;
+}
+
+.bottomBox {
+	margin-left: 200px;
+	padding-left: 15px;
+	min-width: 827px;
+}
+
+.bottomBox img {
+	max-width: 302.76px;
+	width: 23.3vw;
+	padding-right: 2.7vw;
+	min-width: 237.188px;
+}
+
+footer {
+	height: 40px;
+	width: 82.8vw;
+	margin-left: 200px;
+	border: 1px solid #D8D8D8;
+	background-image: url("/Users/student/Downloads/tweed/tweed.png");
+	padding-left: 20px;
+	margin-top: 150px;
+}
+
+footer span {
+	display: flex;
+	width: 82.8vw;
+}
+
+footer a {
+	padding-top: 11px;
+	color: white;
+	font-family: optima;
+}
+
