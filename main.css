@@ -1,7 +1,9 @@
 .container {
-	width: 100vw;
+	width: 100%;
 	background-image: url("/Users/student/Downloads/witewall_3/witewall_3.png");
-	height: 100vw;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 .navbar {
@@ -58,6 +60,10 @@
 	margin-top: 65px;
 }
 
+header {
+	top: 50px;
+}
+
 .quote {
 	display: inline-block;
 	top: 105px;
@@ -66,35 +72,32 @@
 	font-family: optima;
 }
 
-.rotatingImgBox {
+.imgContainer {
 	margin-left: 200px;
 	padding-top: 197px;
 }
 
 .rotatingImg {
-	margin: 40px 20px 20px 15px;
-	right: 80px;
 	display: inline;
 	max-width: 76vw;
 	min-width: 700px;
+	width: 70vw;
 }
 
 .bottomBox {
-	margin-left: 200px;
-	padding-left: 15px;
 	min-width: 827px;
 }
 
 .bottomBox img {
-	max-width: 302.76px;
-	width: 23.3vw;
-	padding-right: 2.7vw;
-	min-width: 237.188px;
+	/*max-width: 345.76px;*/
+	width: 21.4vw;
+	padding: 1.3vw;
+	min-width: 205.938px;
 }
 
 footer {
 	height: 40px;
-	width: 82.8vw;
+	width: 80vw;
 	margin-left: 200px;
 	border: 1px solid #D8D8D8;
 	background-image: url("/Users/student/Downloads/tweed/tweed.png");
@@ -111,5 +114,37 @@ footer a {
 	padding-top: 11px;
 	color: white;
 	font-family: optima;
+}
+
+@media screen and (max-width: 995px) {
+	.links li {
+		display: inline-block;
+	}
+	.navbar {
+		position: static;
+		height: 80px;
+		width: auto;
+		border-bottom: 1px solid #D8D8D8;
+		border-right: none;
+	}
+	.linkText {
+		padding: 10px 15px 10px 15px;
+	}
+	.rotatingImgBox {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.bottomBox {
+		margin-left: 20px;
+	}
+	.bottomBox img {
+		padding-right: 27px;
+		min-width: 212.703px;
+	}
+	footer {
+		margin-left: 0px;
+		margin-top: 100px;
+		padding-top: 50px;
+	}
 }
 

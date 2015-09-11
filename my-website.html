@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang ='en'>
+<html ng-app="myApp" lang ='en'>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dogo Argentino</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
 	<div class="container">
 		<div class="navbar">
 			<div class="logo">
-				<img src="http://www.txdogos.com/uploads/8/6/0/4/8604596/4089103.png?1352214318">
+				<img src="photos/img002.jpg">
 			</div>
 			<ul class="links">
 				<li>
@@ -50,24 +51,28 @@
 			<h2 class="header">
 				Home of the Dogo Argentino
 			</h2>
-			<div class="quote">
+			<span class="quote">
 				A breed like no other...
-			</div>	
+			</span>	
 		</header>
-		<div class="rotatingImgBox">
-			<img src="http://www.txdogos.com/uploads/8/6/0/4/8604596/header_images/1362844119.jpg" class="rotatingImg"
-		</div>
-		</div>
-		<div class="bottomBox">
-			<span>
-				<img src="http://www.txdogos.com/uploads/8/6/0/4/8604596/1262445_orig.jpg">
-			</span>
-			<span>
-				<img src="http://www.txdogos.com/uploads/8/6/0/4/8604596/1262445_orig.jpg">
-			</span>
-			<span>
-				<img src="http://www.txdogos.com/uploads/8/6/0/4/8604596/1262445_orig.jpg">
-			</span>
+		<div class="imgContainer">
+			<!-- <a class="arrow prev" href="#" ng-click="nextSlide()">==></a>
+    		<a class="arrow next" href="#" ng-click="prevSlide()"><==</a> -->
+			<img ng-repeat="slide in slides" ng-src="{{slide.image}}" class="rotatingImg" ng-hide="!isCurrentSlideIndex($index)">
+			
+<!-- Here starts my bottom three text boxes -->
+			
+			<div class="bottomBox">
+				
+				<a href="#"><img src="photos/img002.jpg"></a>
+				
+				
+				<a href="#"><img src="photos/img002.jpg"></a>
+				
+				
+				<a href="#"><img src="photos/img002.jpg"></a>
+				
+			</div>
 		</div>
 		<footer>
 			<span>
@@ -83,6 +88,7 @@
 			</span>
 		</footer>
 	</div>
+	<script src="main.js"></script>
 </body>
 
 
